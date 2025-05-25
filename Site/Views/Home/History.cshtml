@@ -1,0 +1,27 @@
+﻿@model IEnumerable<GeneralForm>
+
+<div class="mx-[650px] w-[800px] bg-zinc-800 mb-[113px]">
+    <h1 class="text-[48px] my-16">История поиска</h1>
+
+    <table class="w-full mx-[-113px] mb-[113px]">
+        <thead class="bg-zinc-900">
+            <tr class="">
+                <th>Дата</th>
+                <th>Паттерн</th>
+                <th>Совпадения</th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.CreatedAt.ToLocalTime()</td>
+                    <td>@item.Pattern</td>
+                    <td>@item.Counts</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @Html.ActionLink("Назад к поиску", "Index")
+</div>

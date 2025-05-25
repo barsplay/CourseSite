@@ -1,0 +1,53 @@
+﻿@using System.Text.Encodings.Web
+@model GeneralForm
+
+<div class="mx-[650px] w-[800px] bg-zinc-800 mb-[113px]">
+    <h1 class="text-[48px] my-16">Результаты поиска</h1>
+
+    <div class="max-w-[700px] h-100 flex flex-col gap-5">
+        <p>Искомое слово: <strong>@Model.Pattern</strong></p>
+        <p>Совпадения: <strong>@Model.AlgOut.Count</strong></p>
+        <div class="bg-zinc-900 p-4">
+            @{
+                string fullText = Model.SearchText; // Полный текст
+                List<List<int>> highlightRanges = Model.AlgOut;
+
+                var result = new System.Text.StringBuilder();
+                int lastPos = 0;
+
+                foreach (var range in highlightRanges.OrderBy(r => r[0]))
+                {
+                    int start = range[0];
+                    int end = range[1];
+
+                    // Добавляем текст ДО подсвечиваемого участка
+                    if (start >= lastPos)
+                    {
+                        result.Append(HtmlEncoder.Default.Encode(
+                        fullText.Substring(lastPos, start - lastPos)
+                        ));
+                    }
+
+                    // Добавляем подсвеченный участок
+                    result.Append("<span class=\"bg-yellow-300 text-black\">");
+                    result.Append(HtmlEncoder.Default.Encode(
+                    fullText.Substring(start, end - start)
+                    ));
+                    result.Append("</span>");
+
+                    lastPos = end;
+                }
+
+                // Добавляем оставшийся текст ПОСЛЕ последнего диапазона
+                if (lastPos < fullText.Length)
+                {
+                    result.Append(HtmlEncoder.Default.Encode(
+                    fullText.Substring(lastPos)
+                    ));
+                }
+            }
+            @Html.Raw(result.ToString())
+        </div>
+        @Html.ActionLink("Назад к поиску", "Index", null)
+    </div>
+</div>

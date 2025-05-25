@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Visual Studio Projects\\Site\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4C6D9063-ECCD-4D83-93D0-916A16AE10E1}|Site\\Site.csproj|d:\\visual studio projects\\site\\site\\models\\generalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C6D9063-ECCD-4D83-93D0-916A16AE10E1}|Site\\Site.csproj|solutionrelative:site\\models\\generalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C6D9063-ECCD-4D83-93D0-916A16AE10E1}|Site\\Site.csproj|d:\\visual studio projects\\site\\site\\views\\home\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C6D9063-ECCD-4D83-93D0-916A16AE10E1}|Site\\Site.csproj|solutionrelative:site\\views\\home\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C6D9063-ECCD-4D83-93D0-916A16AE10E1}|Site\\Site.csproj|d:\\visual studio projects\\site\\site\\views\\home\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C6D9063-ECCD-4D83-93D0-916A16AE10E1}|Site\\Site.csproj|solutionrelative:site\\views\\home\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C6D9063-ECCD-4D83-93D0-916A16AE10E1}|Site\\Site.csproj|d:\\visual studio projects\\site\\site\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C6D9063-ECCD-4D83-93D0-916A16AE10E1}|Site\\Site.csproj|solutionrelative:site\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "History.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\Site\\Site\\Views\\Home\\History.cshtml",
+              "RelativeDocumentMoniker": "Site\\Views\\Home\\History.cshtml",
+              "ToolTip": "D:\\Visual Studio Projects\\Site\\Site\\Views\\Home\\History.cshtml",
+              "RelativeToolTip": "Site\\Views\\Home\\History.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T14:40:32.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GeneralForm.cs",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\Site\\Site\\Models\\GeneralForm.cs",
+              "RelativeDocumentMoniker": "Site\\Models\\GeneralForm.cs",
+              "ToolTip": "D:\\Visual Studio Projects\\Site\\Site\\Models\\GeneralForm.cs",
+              "RelativeToolTip": "Site\\Models\\GeneralForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T14:11:38.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\Site\\Site\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Site\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Visual Studio Projects\\Site\\Site\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Site\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T13:53:08.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\Site\\Site\\Views\\Home\\Search.cshtml",
+              "RelativeDocumentMoniker": "Site\\Views\\Home\\Search.cshtml",
+              "ToolTip": "D:\\Visual Studio Projects\\Site\\Site\\Views\\Home\\Search.cshtml",
+              "RelativeToolTip": "Site\\Views\\Home\\Search.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAgwAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T12:34:16.681Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

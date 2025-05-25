@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model GeneralForm
+
+
+
+<div class="mx-[650px] w-[800px] bg-zinc-800 mb-[73px]">
+    <h1 class="text-[48px] my-16">Поиск слов в тексте</h1>
+
+    <form asp-action="Search" method="post" class="max-w-[700px] h-100 flex flex-col gap-5">
+        @Html.AntiForgeryToken()
+
+        <label class="mr-[520px]">@Html.DisplayNameFor(m => m.SearchText)</label>
+        <textarea asp-for="SearchText"
+                  class="mt-[10px] bg-zinc-900 w-[600px] h-48 resize-none border border-2 border-black pl-4 pt-2"
+                  placeholder="Введите текст"></textarea>
+        <span asp-validation-for="SearchText" class="text-red-500"></span>
+
+        <label class="mr-[520px]">@Html.DisplayNameFor(m => m.Pattern)</label>
+        <input asp-for="Pattern"
+               class="mt-[10px] bg-zinc-900 w-[600px] h-12 resize-none border border-2 border-black pl-4"
+               placeholder="Введите слово">
+        <span asp-validation-for="Pattern" class="text-red-500"></span>
+
+        <button type="submit" class="w-24 h-10 bg-blue-500">Поиск</button>
+    </form>
+</div>

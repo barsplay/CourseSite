@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-800">
+    <header>
+        <div class="w-full bg-black h-24 flex justify-between px-16 items-center">
+            <span class="text-white text-[24px]">Web-App</span>
+            <ul class="text-white text-[24px] flex gap-20">
+                <li>
+                    @Html.ActionLink("Главная", "Index", null)
+                </li>
+                <li>
+                    @Html.ActionLink("История", "History", null)
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="text-white w-[1900px]">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="w-full bg-black h-24 flex justify-center items-center">
+        <span class="text-white text-[14px]">Web-App</span>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
